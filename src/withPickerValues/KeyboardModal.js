@@ -87,7 +87,7 @@ export default class KeyboardModal extends PureComponent {
     createKeyboardModalComponent(this.props);
   }
 
-  componentWillReceiveProps(nextProps: PropsType) {
+  UNSAFE_componentWillReceiveProps(nextProps: PropsType) {
     if (this.displayed) {
       updateKeyboardModalComponent(nextProps);
     }
